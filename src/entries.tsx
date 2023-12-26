@@ -7,7 +7,7 @@ export default defineEntries(
   // renderEntries
   async (input) => {
     return {
-      App: <App name={input || 'Waku'} />,
+      App: <App />,
     };
   },
   // getBuildConfig
@@ -31,5 +31,5 @@ export default defineEntries(
       default:
         return null;
     }
-  },
+  }
 );
