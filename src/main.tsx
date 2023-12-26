@@ -1,11 +1,15 @@
 import { StrictMode } from 'react';
 import { createRoot, hydrateRoot } from 'react-dom/client';
 import { Root, Slot } from 'waku/client';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const rootElement = (
   <StrictMode>
     <Root>
-      <Slot id="App" />
+      <SpeedInsights />
+      <Analytics />
+      <Slot id='App' />
     </Root>
   </StrictMode>
 );
