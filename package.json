@@ -15,9 +15,8 @@
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.2",
     "hono": "3.11.7",
-    "react": "18.3.0-canary-08cd087ca-20240110",
-    "react-dom": "18.3.0-canary-08cd087ca-20240110",
-    "react-server-dom-webpack": "18.3.0-canary-08cd087ca-20240110",
+    "react": "18.3.0-canary-6639ed3b3-20240111",
+    "react-dom": "18.3.0-canary-6639ed3b3-20240111",
     "waku": "0.19.0-alpha.2"
   },
   "devDependencies": {
@@ -28,6 +27,7 @@
     "@vitejs/plugin-react": "4.2.1",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.33",
+    "react-server-dom-webpack": "18.3.0-canary-6639ed3b3-20240111",
     "tailwindcss": "^3.4.1",
     "typescript": "5.3.3",
     "vite": "5.0.9"
