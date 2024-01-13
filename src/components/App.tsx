@@ -1,6 +1,7 @@
 import { Description } from './Description.js';
 import { Footer } from './Footer.js';
 import { Layout } from './Layout.js';
+import '../style.css';
 
 const App = () => {
   return (
