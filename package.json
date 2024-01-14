@@ -10,25 +10,21 @@
     "start": "waku start --with-ssr"
   },
   "dependencies": {
-    "@hono/node-server": "1.3.3",
     "@vanilla-extract/css": "^1.14.0",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.2",
-    "hono": "3.11.7",
-    "react": "18.3.0-canary-0cdfef19b-20231211",
-    "react-dom": "18.3.0-canary-0cdfef19b-20231211",
-    "react-server-dom-webpack": "18.3.0-canary-0cdfef19b-20231211",
-    "waku": "0.18.1"
+    "react": "18.3.0-canary-c5b937576-20231219",
+    "react-dom": "18.3.0-canary-c5b937576-20231219",
+    "react-server-dom-webpack": "18.3.0-canary-c5b937576-20231219",
+    "waku": "0.19.0-beta.1"
   },
   "devDependencies": {
-    "@swc/core": "1.3.100",
     "@types/react": "18.2.45",
     "@types/react-dom": "18.2.17",
     "@vanilla-extract/vite-plugin": "^3.9.3",
-    "@vitejs/plugin-react": "4.2.1",
     "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.32",
-    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
     "typescript": "5.3.3",
     "vite": "5.0.9"
   }
