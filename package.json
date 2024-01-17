@@ -4,10 +4,10 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "waku dev",
-    "build": "waku build",
-    "build:vercel": "waku build --with-vercel",
-    "start": "waku start"
+    "dev": "waku dev --with-ssr",
+    "build": "waku build --with-ssr",
+    "build:vercel": "waku build --with-ssr --with-vercel",
+    "start": "waku start --with-ssr"
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.14.0",
