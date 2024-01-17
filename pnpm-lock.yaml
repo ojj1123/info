@@ -24,8 +24,8 @@ dependencies:
     specifier: 18.3.0-canary-c5b937576-20231219
     version: 18.3.0-canary-c5b937576-20231219(react-dom@18.3.0-canary-c5b937576-20231219)(react@18.3.0-canary-c5b937576-20231219)(webpack@5.89.0)
   waku:
-    specifier: 0.19.0-beta.1
-    version: 0.19.0-beta.1(react-dom@18.3.0-canary-c5b937576-20231219)(react-server-dom-webpack@18.3.0-canary-c5b937576-20231219)(react@18.3.0-canary-c5b937576-20231219)
+    specifier: 0.19.0
+    version: 0.19.0(react-dom@18.3.0-canary-c5b937576-20231219)(react-server-dom-webpack@18.3.0-canary-c5b937576-20231219)(react@18.3.0-canary-c5b937576-20231219)
 
 devDependencies:
   '@types/react':
@@ -1329,6 +1329,13 @@ packages:
     resolution: {integrity: sha512-o9bjXmDNcF7GbM4CNQpmi+TutCgap/K3w1JyKgxAjqx41zp9qlIAVFi0IhCNsJcXolEqLWhbFbEeL0PvYm4pcQ==}
     dependencies:
       undici-types: 5.26.5
+    dev: true
+
+  /@types/node@20.11.5:
+    resolution: {integrity: sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: false
 
   /@types/prop-types@15.7.11:
     resolution: {integrity: sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==}
@@ -2167,7 +2174,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.11.0
+      '@types/node': 20.11.5
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: false
@@ -3030,8 +3037,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /waku@0.19.0-beta.1(react-dom@18.3.0-canary-c5b937576-20231219)(react-server-dom-webpack@18.3.0-canary-c5b937576-20231219)(react@18.3.0-canary-c5b937576-20231219):
-    resolution: {integrity: sha512-83mwy/kMPt0oaDDWmEZ50mCG+NaySdmVcPQ8XT+K5GyWYp4RvGK99G1TqCDWTQjCSfPIxfuTvMLhOP5wwTV34g==}
+  /waku@0.19.0(react-dom@18.3.0-canary-c5b937576-20231219)(react-server-dom-webpack@18.3.0-canary-c5b937576-20231219)(react@18.3.0-canary-c5b937576-20231219):
+    resolution: {integrity: sha512-urPlmqi1OPKtcv3y9kpUZnc81hA19rABwXS0ImWqA2Ntddr5/FV+2pba1ITbqNALK9EPUmB9B+PMSOSZKyUdng==}
     engines: {node: '>=18.16.0'}
     hasBin: true
     peerDependencies:
