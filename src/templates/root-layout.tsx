@@ -2,8 +2,8 @@ import '../style.css'
 
 import type { ReactNode } from 'react'
 
-import { Footer } from '../components/footer.js'
-import { Layout } from '../components/layout.js'
+import { Footer } from '../components/footer.tsx'
+import { Layout } from '../components/layout.tsx'
 
 type RootLayoutProps = { children: ReactNode }
 
