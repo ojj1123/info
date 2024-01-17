@@ -15,5 +15,5 @@ export const Footer = () => {
         </a>
       </span>
     </footer>
-  );
-};
+  )
+}

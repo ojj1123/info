@@ -1,29 +1,24 @@
-import { lazy } from 'react';
-import { Slot } from 'waku/client';
-import { defineEntries } from 'waku/server';
+import { createPages } from 'waku'
+import { RootLayout } from './templates/root-layout.js'
+import { HomePage } from './templates/home-page.js'
+import { AboutPage } from './templates/about-page.js'
 
-const App = lazy(() => import('./components/App.js'));
+export default createPages(async ({ createPage, createLayout }) => {
+  createLayout({
+    render: 'static',
+    path: '/',
+    component: RootLayout,
+  })
 
-export default defineEntries(
-  // renderEntries
-  async (input) => {
-    return {
-      App: <App />,
-    };
-  },
-  // getBuildConfig
-  async () => [{ pathname: '/', entries: [{ input: '' }] }],
-  // getSsrConfig
-  async (pathStr) => {
-    const { pathname } = new URL(pathStr, 'http://localhost');
-    switch (pathname) {
-      case '/':
-        return {
-          input: '',
-          body: <Slot id='App' />,
-        };
-      default:
-        return null;
-    }
-  }
-);
+  createPage({
+    render: 'static',
+    path: '/',
+    component: HomePage,
+  })
+
+  createPage({
+    render: 'static',
+    path: '/about',
+    component: AboutPage,
+  })
+})

@@ -1,7 +1,7 @@
-import { keyframes, style } from '@vanilla-extract/css';
+import { keyframes, style } from '@vanilla-extract/css'
 
 function radialGradient(x: string, y: string, colors: string[]) {
-  return `radial-gradient(at ${x} ${y}, ${colors.join(', ')})`;
+  return `radial-gradient(at ${x} ${y}, ${colors.join(', ')})`
 }
 
 const backgroundColorMap = {
@@ -40,13 +40,13 @@ const backgroundColorMap = {
     end: '53%',
     value: '#eea5ba',
   },
-};
+}
 
 const backgroundAnimation = keyframes({
   '0%': { transform: 'translateX(-50%) rotate(0deg)' },
   '50%': { transform: 'translateX(-50%) rotate(270deg)' },
   '100%': { transform: 'translateX(-50%) rotate(0deg)' },
-});
+})
 
 export const layout = style({
   maxWidth: 760,
@@ -71,7 +71,7 @@ export const layout = style({
       height: '100%',
       backgroundImage: Object.entries(backgroundColorMap)
         .map(([, { start, end, value }]) => {
-          return radialGradient(start, end, [`${value} 0`, 'transparent 50%']);
+          return radialGradient(start, end, [`${value} 0`, 'transparent 50%'])
         })
         .join(', '),
       backgroundSize: '180%, 200%',
@@ -81,4 +81,4 @@ export const layout = style({
       zIndex: -1,
     },
   },
-});
+})
